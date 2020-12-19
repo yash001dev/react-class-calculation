@@ -18,6 +18,21 @@ class App extends Component{
       this.calculate()
     }
 
+    else if(btnValue==="x^2"){
+      let existingNumber=Number(this.state.result)
+      console.log(existingNumber);
+      this.setState({
+        result:existingNumber*existingNumber
+      });
+    }
+
+    else if(btnValue==="sqrt"){
+      let existingNumber=Number(this.state.result)
+      this.setState({
+        result:Math.sqrt(existingNumber)
+      });
+    }
+
     else if(btnValue==="C"){
       this.reset()
     }
@@ -25,6 +40,7 @@ class App extends Component{
     else if(btnValue==="CE"){
       this.backspace()
     }
+
 
     else{
       this.setState({

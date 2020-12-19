@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 
-const arra1=["(","CE",")","C", "1","2","3","+","4","5","6","-","7","8","9","*",".","0","=","/"];
+const arra1=["(","CE",")","C", "1","2","3","+","4","5","6","-","7","8","9","*",".","0","=","/","x^2","%","sqrt"];
 
 class KeyPadComponent extends Component{
     constructor(props){
